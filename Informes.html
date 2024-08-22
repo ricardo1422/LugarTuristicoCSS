@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/icono.png">
+</head>
+<body>
+    <header class="encabezado">
+        <img src="Assets/icono.png" alt="Escudo de San Antonio la Isla">
+        <div class="encabezado_links">
+            <a class="links_encabezado" href="Inicio.html">Inicio</a>
+            <a class="links_encabezado" href="Visita.html">Visita</a>
+        </div>
+       
+    </header>
+    <main class="fondo">
+        <div id="seccion_titulo">
+            <div class="titulo_pagina">
+                <img src="Assets/Greca.png" alt="Adorno del titulo" width="130px">
+                <h1>Contactanos</h1>
+                <img src="Assets/Greca.png" alt="Adorno del titulo" id="greca_reves" width="130px" >
+            </div>
+        </div>
+        <div class="seccion_formulario">
+            <p>Si quieres saber más sobre nuestro municipio le solicitaremos que rellene el 
+                formulario a continuación y estaremos encantados de responderle.
+                Los campos que tienen un "*" son necesarios.
+            </p>
+            <form action="">
+                <div class="formulario">
+                    <br>
+                    <label for="nombre">*Nombre (no es necesario que sea tu nombre completo)</label>
+                    <input type="text" id="nombre" placeholder="Nombre"class="elemento_reducido" required pattern="([A-Za-z ])+">
+                    <br>
+                    <label for="telefono">Número de contacto</label>
+                    <input type="number" class="elemento_reducido" max="9999999999" min="1000000000" id="telefono">
+                    <br>
+                    <label for="correo">*Correo de contacto</label>
+                    <input type="text" id="correo" placeholder="ejemplo@emial" class="elemento_reducido" 
+                    required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}">
+                    <br>
+                    <label for="mensaje">*Mensaje</label>
+                    <textarea placeholder="¿Qué duda tienes?" rows="10" required></textarea>
+                    <br>
+                    <button class="boton_reducido" type="submit">Enviar</button>
+                </div>
+            </form>
+            
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
