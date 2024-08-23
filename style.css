@@ -9,6 +9,9 @@ imagenes 238 44 94 */
     --color_secundario: rgb(238,44,94);
     --color_fondo: rgb(242,242,242);
     --color_titulos: rgb(129, 114, 25);
+    --color_ranas: rgb(3, 172, 3);
+    --color_museo: rgb(20, 61, 173);
+    --color_madera: #917347;
 }
 
 body{
@@ -50,6 +53,7 @@ header{
     flex-direction: column;
     gap: 20px;
     padding: 5%;
+    text-align: justify;
 }
 img{
     border-radius: 10%;
@@ -65,6 +69,13 @@ footer{
 }
 #greca_reves{
     transform: rotate(180deg);
+}
+.imagen_reves{
+    transform: scaleX(-1);
+}
+.imagen_abajo{
+    padding: 0% 25% 0% 25%;
+    
 }
 #seccion_historia{
     padding: 0% 5%  0% 5%;
@@ -96,6 +107,7 @@ p, li{
     font-weight: 500;
     text-align: justify;
     gap: 10px;
+    color: black;
 }
 .mapa{
     padding: 3%;
@@ -139,13 +151,178 @@ p, li{
     align-items: center;
     width: 15%;
 }
-input:invalid {
-    border: 2px solid red;
-  }
-  
-  input:valid {
-    border: 2px solid green;
-  }
-  input:empty{
+input:empty{
     border: 1px solid gray;
-  }
+}
+
+
+/* secciones de la pagina visita */
+.imagen_sticky{
+    position:sticky;
+    top: 30px;
+    width: 150px;
+
+}
+.subtitulo_lugares{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0% 5%  0% 10%;
+}
+
+    
+.seccion_lugares
+{
+    padding: 0% 5%  0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+.texto_imagen{
+    display: flex;
+    align-items: center;
+    gap:25%
+}
+.span_rana{
+    color: var(--color_ranas);
+    font-weight: 600;
+}
+.span_museo{
+    color: var(--color_museo);
+    font-weight: 600;
+}
+.span_madera{
+    color: var(--color_madera);
+    font-weight: 700;
+}
+.span_iglesia{
+    color: var(--color_titulos);
+    font-weight: 700;
+}
+.carrusel_contenido {
+    
+    overflow: hidden;
+    text-align: left;
+    height: 300px;
+    width: 100%;
+
+}
+.carrusel_caja {
+    -moz-animation: automatizacion 20s infinite linear;
+    -o-animation: automatizacion 20s infinite linear;
+    -webkit-animation: automatizacion 20s infinite linear;
+    animation: automatizacion 20s infinite linear;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    height: 300px;
+    width: 400%;
+    
+}
+
+.carrusel_imagen{
+    height: 300px;
+    width: 100%;
+}
+.carrusel_elemento {
+    float: left;
+    width: 25%;
+}
+@-moz-keyframes automatizacion {
+    0% {
+    margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    
+    99% {
+        margin-left: -300%;
+    }
+    
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    
+    99% {
+        margin-left: -300%;
+    }
+    
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    
+    99% {
+        margin-left: -300%;
+    }
+    
+    100% {
+        margin-left: 0;
+    }
+}
