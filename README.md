@@ -5,7 +5,7 @@ Para acceder al sitio web use el siguiente enlace: <https://ricardo1422.github.i
 Sitio web de una localidad que busca promover el turismo en la región
 
 ## Partes:
-El sitio web se compone de tres paginas cada una cuenta con un  Header: Con uan barar de navegación hacia las otras páginas, un Footer con los enlaces a las redes sociales principales del municipio y un fondo con jueguetes de madera que 
+Al sitio web se le añadio responsividad y se compone de tres paginas cada una cuenta con un  Header: Con uan barar de navegación hacia las otras páginas, un Footer con los enlaces a las redes sociales principales del municipio y un fondo con jueguetes de madera que 
 representativos de la región.
 + Página de inicio:
 + + Main tres secciones:
