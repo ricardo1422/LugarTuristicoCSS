@@ -1,4 +1,5 @@
-# Pagina de un sitio turistico 
+# Pagina de un sitio turistico
+Para acceder al sitio web use el siguiente enlace: <https://ricardo1422.github.io/LugarTuristicoCSS/Inicio>
 
 ## Descripcion:
 Sitio web de una localidad que busca promover el turismo en la región
