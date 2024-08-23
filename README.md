@@ -1,9 +1,9 @@
 # Pagina de un sitio turistico 
 
-## Descripcion: \
+## Descripcion:
 Sitio web de una localidad que busca promover el turismo en la región
 
-## Partes: \
+## Partes:
 El sitio web se compone de tres paginas cada una cuenta con un  Header: Con uan barar de navegación hacia las otras páginas, un Footer con los enlaces a las redes sociales principales del municipio y un fondo con jueguetes de madera que 
 representativos de la región.
 + Página de inicio:
