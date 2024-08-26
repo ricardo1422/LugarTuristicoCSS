@@ -365,8 +365,25 @@ input:empty{
     }
 
     .imagen_abajo{
-        padding: 0% 15% 0% 15%;
+        padding: 0%;
         width: 100%;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    .elemento_reducido{
+        width: 50%;
+    }
+    .boton_reducido{
+        width: 15%;
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        padding: 1% 0% 1% 0%;
+        gap: 5%;
     }
 }
 @media (max-width: 450px) {
@@ -386,8 +403,24 @@ input:empty{
         flex-direction: column;
     }
     .imagen_abajo{
-        padding: 0% 5% 0% 5%;
+        padding: 0%;
         width: 100%;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .elemento_reducido{
+        width: 50%;
+    }
+    .boton_reducido{
+        width: 20%;
+    }
+    footer{
+        flex-direction: column;
+        padding: 1% 0% 1% 0%;
+        gap: 1%;
     }
     
 }
