@@ -87,6 +87,14 @@ footer{
     gap: 3%;
     width: 100%;
 }
+button{
+    background-color: rgb(214, 214, 214);
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    margin: 0% 0% 0% 90%;
+    border-color: rgb(214, 214, 214);
+    border-radius: 6%;
+    
+}
 .links_footer{
     color: var(--color_fondo);
     text-decoration: none;
@@ -429,6 +437,10 @@ input:empty{
         flex-direction: column;
         padding: 1% 0% 1% 0%;
         gap: 1%;
+    }
+    button{
+        margin: 0% 0% 0% 80%
+
     }
     
 }
