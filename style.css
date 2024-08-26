@@ -6,6 +6,7 @@
 }
 :root{
     --color_secundario: rgb(238,44,94);
+    --color_menu_hover:  rgb(248, 66, 111);
     --color_fondo: rgb(242,242,242);
     --color_titulos: rgb(129, 114, 25);
     --color_ranas: rgb(3, 172, 3);
@@ -31,20 +32,61 @@ main{
     padding: 0% 3% 0% 1%;
     gap: 5%
 }
-.encabezado_links{
-    display: flex;
-    align-items: center;
-    gap: 35%;
-    
-    
-}
-.links_encabezado{
-    color: (var(--color_fondo));
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
+#menu_desplegable ul{
+    list-style: none;
+    margin:0;
+    padding: 1rem;
+    gap: 2rem;
 }
 
+#menu_desplegable ul li {
+    background-color: var(--color_secundario);
+   }
+
+#menu_desplegable ul a{
+        display:block;
+        color: var(--color_fondo);
+        text-decoration:none;
+        font-weight:600;
+        font-size:1rem;
+        padding:1rem 0.5rem 1rem 0.5rem;
+        text-transform:uppercase;
+}
+/*posiciona items menu desplegale*/
+#menu_desplegable ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+#menu_desplegable ul li:hover{
+    background: var(--color_menu_hover);
+}
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+   
+
+/*oculta items*/
+#menu_desplegable ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+
+
+/*Despliega*/
+#menu_desplegable ul ul li {
+    float:none;
+    width:150px
+}
+#menu_desplegable ul li:hover > ul {
+    display:block;
+}
 .fondo{
     background-image: url(Assets/FondoMain.jpeg);
     background-size: 100%;
@@ -71,7 +113,7 @@ img{
     
     
 }
-p, li{
+p, .dato{
     font-size: 1.25rem;
     font-weight: 500;
     text-align: justify;
@@ -372,7 +414,7 @@ input:empty{
     h2{
         font-size: 1.5rem;
     }
-    p, li{
+    p, .dato{
         font-size: 1.25rem;
     }
 
@@ -410,7 +452,7 @@ input:empty{
     h2{
         font-size: 1rem;
     }
-    p, li{
+    p, .dato{
         font-size: .75rem;
     }
 

@@ -11,8 +11,39 @@
     <header class="encabezado">
         <img src="Assets/Icono.png" alt="Escudo de San Antonio la Isla">
         <div class="encabezado_links">
-            <a class="links_encabezado" href="Visita.html">Visita</a>
-            <a class="links_encabezado" href="Informes.html">Informes</a>
+            <nav id="menu_desplegable">
+                <ul>
+                    <li>
+                        <a class="links_encabezado" href="Inicio.html">Inicio</a>
+                        <ul>
+                            <li><a href="Inicio.html#historia">Historia</a></li>
+                            <li><a href="Inicio.html#actualidad">Actualidad</a></li>
+                            <li><a href="Inicio.html#datos">Datos Curioso</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="links_encabezado" href="Visita.html">Visita</a>
+                        <ul class="sub_menu">
+                            <li>
+                                <a href="Visita.html#seccion_ranas">Parque las Ranas</a>
+                            </li>
+                            <li>
+                                <a href="Visita.html#seccion_museo">Museo Techialoyan</a>
+                            </li>
+                            <li>
+                                <a href="Visita.html#seccion_madera">Tiendas de Artesanias</a>
+                            </li>
+                            <li>
+                                <a href="Visita.html#seccion_iglesia">Parroquia San Antonio de Padua</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="links_encabezado" href="Informes.html">Informes</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
        
     </header>
@@ -32,7 +63,7 @@
         <br>
 
         <!-- seccion histroia -->
-        <div class="subtitulo_izq">
+        <div class="subtitulo_izq" id="historia">
             <img src="Assets/Greca.png" alt="Adorno del titulo" width="100px" height="25px">
             <h2>Historia</h2>
             <img src="Assets/Greca.png" alt="Adorno del titulo" id="greca_reves" width="100px" height="25px" >
@@ -76,7 +107,7 @@
         <br>
 
         <!-- seccion actualidad -->
-        <div class="subtitulo_der">
+        <div class="subtitulo_der" id="actualidad">
             <img src="Assets/Greca.png" alt="Adorno del titulo" width="100px" height="25px">
             <h2>Actualidad</h2>
             <img src="Assets/Greca.png" alt="Adorno del titulo" id="greca_reves" width="100px" height="25px" >
@@ -112,7 +143,7 @@
         <br>
         <br>
         <!-- seccion datos curiosos -->
-        <div class="subtitulo_izq">
+        <div class="subtitulo_izq" id="datos">
             <img src="Assets/Greca.png" alt="Adorno del titulo" width="100px" height="25px">
             <h2>Datos curiosos</h2>
             <img src="Assets/Greca.png" alt="Adorno del titulo" id="greca_reves" width="100px" height="25px" >
@@ -121,23 +152,23 @@
             
             <div id="texto_datos"> 
                 <ol>
-                    <li>
+                    <li class="dato">
                         Los primeros habitantes de San Antonio la Isla fueron los Matlatzincas, 
                         quienes fueron subyugados por los mexicas.
                     </li>
                     <br>
-                    <li>
+                    <li class="dato">
                         Inicialmente se llamó Otompa y luego Teoloyucan, según lo escrito
                         en el Códice de Mendoza. 
                     </li>
                     <br>
-                    <li>
+                    <li class="dato">
                         Es reconocido por su importante producción artesanal en madera, hueso y 
                         cuerno, pero destaca la manufactura de juguetes de madera 
                         torneada y tallada
                     </li>
                     <br>
-                    <li>
+                    <li class="dato">
                         Durante el Día de Muertos, se exhiben cinco alebrijes monumentales que brillan 
                         en la oscuridad así como una catrina gigante.
                     </li>
